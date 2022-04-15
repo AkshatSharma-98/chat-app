@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/chat.css">
+
+    <title>MY CHAT APP</title>
+</head>
+
+<body>
+    <div class="chat-container">
+        <header class="header">
+            <h3>CHAT APP</h3>
+            <a>Leave Room</a>
+        </header>
+        <section class="chat-body">
+            <nav class="side-nav">
+                <h3>ROOM NAME:</h3>
+                <h4 id="room-name"></h4>
+
+                <h3>USERS:</h3>
+                <ul id="users"></ul>
+            </nav>
+            <div class="line"></div>
+            <div class="chat-messages"></div>
+        </section>
+        <form id="chatForm">
+            <input type="text" id="msg" placeholder="Enter Message" required autocomplete="off" />
+            <button class="btn">SEND</button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js"
+        integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+
+</html>

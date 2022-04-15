@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chat-container {
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+  color: antiquewhite;
+}
+
+.header a {
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  background-color: white;
+}
+
+.chat-body {
+  display: flex;
+  height: 300px;
+}
+
+.side-nav {
+  min-width: 200px;
+  margin: 25px;
+}
+
+#room-name {
+    margin-bottom: 20px;
+    background-color: rgb(236, 233, 233);
+    color: rgb(82, 45, 116);
+}
+
+.line {
+    min-height: 100%;
+    width: 5px;
+    background-color: red;
+}
+
+.chat-messages {
+    margin: 25px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.chat-message {
+  background-color: rgb(59, 11, 11);
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px;
+}
+
+.chat-message .user {
+  color: rgb(122, 122, 236);
+}
+
+.chat-message .user span {
+  margin-left: 80px;
+}
+
+.chat-message .text {
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+
+#chatForm {
+  display: flex;
+  justify-content: space-between;
+  background-color: blue;
+  padding: 10px;
+}
+
+#chatForm input {
+  padding: 5px;
+  border: 2px solid red;
+  border-radius: 20px;
+  min-width: 80%;
+}
+
+#chatForm button {
+  width: 100px;
+  cursor: pointer;
+}
